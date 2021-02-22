@@ -1,0 +1,96 @@
+---
+layout: default
+---
+
+<div class="flex-div">
+    <div class="posts">
+      {% if page.url == "/" %}
+        {% for post in site.tags.pinned %}
+        <div id="pinned">
+          <article class="post">
+            <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+
+            <div class="entry">
+              <p>{{ post.excerpt }}</p>
+            </div>
+
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Read More</a>
+          </article>
+        </div>
+        {% endfor %}
+      {% endif %}
+
+      {% assign i = 0 %}
+      {% for post in paginator.posts %}
+        {% unless post.tags contains 'pinned' %}
+          {% if forloop.index == 5 %}
+            <article class="post">
+              <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+              <div class="entry">
+                <p>{{ post.excerpt }}</p>
+              </div>
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Read More</a>
+            </article>
+          {% else %}
+            <article class="post">
+              <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+                <div id="smallCategories">
+                          {% if post %}
+        {% assign categories = post.categories %}
+      {% else %}
+        {% assign categories = page.categories %}
+      {% endif %}
+      {% for category in categories %}
+        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+        
+      {% endfor %} | <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+                </div>
+              <div class="entry">
+                  {% if post.subtitle %}<div id="subtitle">{{ post.description }}</div>{% endif %}
+                <!--<p>{{ post.excerpt | strip_html | lstrip | truncate: 228, "..." }}</p>-->
+              </div>
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Read More</a>
+            </article>
+          {% endif %}
+          {% assign i = i | plus:1 %}
+        {% endunless %}
+      {% endfor %}
+      
+      <!-- pagination -->
+      {% if paginator.total_pages > 1 %}
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+        {% else %}
+          <span>&laquo; Prev</span>
+        {% endif %}
+
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <span class="webjeda">{{ page }}</span>
+          {% elsif page == 1 %}
+            <a href="/">{{ page }}</a>
+          {% else %}
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+        {% else %}
+          <span>Next &raquo;</span>
+        {% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Levitating next/previous page links -->
+  {% if paginator.previous_page %}
+    <a class="pagination-side next" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}"><b>Previous page</b></a>
+  {% endif %}
+  
+  {% if paginator.next_page %}
+    <a class="pagination-side previous" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}"><b>Next page</b></a>
+  {% endif %}
+</div>

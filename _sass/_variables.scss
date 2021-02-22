@@ -1,0 +1,45 @@
+
+//
+// VARIABLES
+//
+
+// Colors
+$blue: #4183C4;
+$comment: #6272a4;
+$cyan: #8be9fd;
+$green: #50fa7b;
+$orange: #ffb86c;
+$pink: #ff79c6;
+$purple: #bd93f9;
+$red: #ff5555;
+$mutedRed: #f2676c;
+$yellow: #f1fa8c;
+$mutedYellow: #F2E39B;
+$darkMutedYellow: #d4c686;
+
+// Tones
+$black: #282a36;
+$white: #fff;
+$gray: #666;
+$lightGray: #eee;
+$darkGray: #333;
+$darkerGray: #222;
+$lightBlack: #44475a;
+$lightWhite: #f8f8f2;
+
+
+// Font stacks
+$helvetica: Helvetica, Arial, sans-serif;
+$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$georgia: Georgia, serif;
+
+$serif: Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif;
+$sans: Frutiger, 'Helvetica Neue', Helvetica, 'Frutiger Linotype', Univers, Calibri, 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', Myriad, 'DejaVu Sans Condensed', 'Liberation Sans', 'Nimbus Sans L', Tahoma, Geneva, Arial, sans-serif;
+$mono: 'Courier Prime', 'Courier New', Courier, monospace;
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
