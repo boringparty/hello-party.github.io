@@ -14,7 +14,7 @@ layout: default
               <p>{{ post.excerpt }}</p>
             </div>
 
-            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Read More</a>
+            <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Full Post</a>
           </article>
         </div>
         {% endfor %}
@@ -29,7 +29,7 @@ layout: default
               <div class="entry">
                 <p>{{ post.excerpt }}</p>
               </div>
-              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Read More</a>
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Full Post</a>
             </article>
           {% else %}
             <article class="post">
@@ -49,7 +49,7 @@ layout: default
                   {% if post.subtitle %}<div id="subtitle">{{ post.description }}</div>{% endif %}
                 <!--<p>{{ post.excerpt | strip_html | lstrip | truncate: 228, "..." }}</p>-->
               </div>
-              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Read More</a>
+              <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">// Full Post</a>
             </article>
           {% endif %}
           {% assign i = i | plus:1 %}
