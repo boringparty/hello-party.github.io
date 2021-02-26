@@ -286,6 +286,17 @@ a {
    color: #FFF;
 }
 
+
+#archives ul li a {
+    background: none;
+}
+
+#archives ul li a:hover {
+    background: none;
+    border-bottom: 1px dotted #4183C4;
+    text-decoration:none;
+}
+
 ul, ol {
   margin: 15px 0;
   padding-left: 30px;
