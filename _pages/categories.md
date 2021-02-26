@@ -19,4 +19,4 @@ title: Categories
     {% endfor %}
   </div>
 {% endfor %}
-</div>p
+</div>
