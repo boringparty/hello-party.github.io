@@ -287,11 +287,13 @@ a {
 }
 
 
+#search-container ul#results-container li a,
 #archives ul li a {
     background: none;
     border-radius: 0px;
 }
 
+#search-container ul#results-container li a:hover,
 #archives ul li a:hover {
     color:#4183C4;
     background: none;
