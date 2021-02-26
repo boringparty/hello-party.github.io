@@ -5,9 +5,9 @@ title: Categories
 ---
 
 <div id="archives">
-{% assign sorted_cats = site.categories | sort %}
-{% for category in sorted_cats %}
-{% assign sorted_posts = category[1] | reversed %}
+ {% assign sorted_cats = site.categories | sort %}
+ {% for category in sorted_cats %}
+ {% assign sorted_posts = category[1] | reversed %}
 <h3 id="{{category[0] | uri_escape | downcase }}">{{category[0] | capitalize}}</h3>
 <ul>
   {% for post in sorted_posts %}
