@@ -10,12 +10,13 @@ permalink: /search/
 </div>
 
 <script src="{{ site.baseurl }}/assets/simple-jekyll-search.min.js" type="text/javascript"></script>
-
+<ul>
 <script>
  SimpleJekyllSearch({
  searchInput: document.getElementById('search-input'),
  resultsContainer: document.getElementById('results-container'),
- searchResultTemplate: '<div style="text-align: left !important;"><a href="{url}"><h3 style="text-align:left !important;">{title}</h3></a></div>',
+ searchResultTemplate: '<li><a href="{url}">{title}</a></li></div>',
  json: '{{ site.baseurl }}/search.json'
  });
 </script>
+</ul>
