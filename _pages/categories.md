@@ -4,7 +4,7 @@ permalink: /categories/
 title: Categories
 ---
 
-<div id="archives">
+
 {% assign sorted_cats = site.categories | sort %}
 {% for category in sorted_cats %}
 {% assign sorted_posts = category[1] | reversed %}
@@ -15,4 +15,3 @@ title: Categories
   {% endfor %}
 </ul>
 {% endfor %}
-</div>
