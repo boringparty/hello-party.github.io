@@ -2,7 +2,7 @@
 
 layout: post
 title: Third test post
-categories: [Testing]
+categories: [Testing, CategoryB]
 subtitle: a test page to see how the og stuff works out.
 description: a test page to see how the og stuff works out.
 
