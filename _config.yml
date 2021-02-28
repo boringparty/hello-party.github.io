@@ -14,10 +14,10 @@ description: Some Google Sheets tricks.
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: /images/logo.png
 logo: /images/logo.png
-icon32: /images/logo32x32.png
-icon180: /images/logo180x180.png
-icon192: /images/logo192x192.png
-icon270: /images/logo270x270.png
+icon32: /images/logo-32x32.png
+icon180: /images/logo-180x180.png
+icon192: /images/logo-192x192.png
+icon270: /images/logo-270x270.png
 
 #
 # Flags below are optional
