@@ -18,6 +18,7 @@ layout: default
     </div>
   </div>
   <div class="entry">
+  {% if post.subtitle %}<div id="subtitle">{{ post.description }}</div>{% endif %}
     {{ content }}
     <p>◆</p>
   </div>
