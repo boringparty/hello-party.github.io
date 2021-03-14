@@ -62,7 +62,7 @@ html {
 body {
   background: $white;
   font-family: $mono;
-  color: $black;
+  color: $text;
   line-height: 1.7;
   font-weight: 400;
   font-size: 1em;
@@ -83,7 +83,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $mono;
-  color: $darkerGray;
+  color: $header-text;
   font-weight: bold;
   line-height: 14pt;
   margin: 1em 0 15px;
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 1.2em;
   a, a:link, a:hover {
-    color: $black;
+    color: $header-hover;
     border-bottom: 0px;
   }
 }
@@ -108,7 +108,7 @@ h2 {
 }
 
 nav a:focus {
-    background: $yellow!important;
+    background: $corn!important;
 }
 
 h3 {
@@ -117,12 +117,12 @@ h3 {
 
 h4 {
   font-size: .8em;
-  color: $black;
+  color: $header-text;
 }
 
 div#pinned {
     padding: 0px 0px 20px 0px;
-    border-bottom: 1px dotted $black;
+    border-bottom: 1px dotted $border;
 }
 
 div#smallCategories, #smallCategories a {
@@ -134,7 +134,7 @@ div#smallCategories, #smallCategories a {
 }
 
 #smallCategories a {
-    background: $lightGray;
+    background: $categories;
     padding: 2px 5px;
     color: $black;
     border-radius: 10px;
@@ -151,8 +151,8 @@ p {
 }
 
 details {
-    border-top: 1px solid $black;
-    border-bottom: 4px double $black;
+    border-top: 1px solid $border;
+    border-bottom: 4px double $border;
     margin-top: 25px;
     padding-top: 4px;
 }
@@ -163,7 +163,7 @@ details[open] {
 
 table.rouge-table tr, table.rouge-table td {
     border: 0px;
-    background: $black;
+    background: $back-dark;
 }
 
 td.rouge-gutter.gl {
@@ -172,29 +172,30 @@ td.rouge-gutter.gl {
 
 table {
 	padding: 0;
+	margin-top: 30px;
 }
 
 table tr {
-	border-top: 1px solid $gray;
+	border-top: 1px solid $border-light;
 	background-color: $white;
 	margin: 0;
 	padding: 0;
 }
 
 table tr:nth-child(2n) {
-	background-color: $lightWhite;
+	background-color: $border-light;
 }
 
 table tr th {
 	font-weight: bold;
-	border: 1px solid $gray;
+	border: 1px solid $border-light;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
 }
 
 table tr td {
-	border: 1px solid $gray;
+	border: 1px solid $border-light;
 	text-align: left;
 	margin: 0;
 	padding: 6px 13px;
@@ -226,16 +227,16 @@ table tr td :last-child {
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
-  border: 1px solid $lightGray;
+  border: 1px solid $border-light;
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 18px;
-  background-color: $lightWhite;
+  background-color: $back-light;
 }
 
 .share-box {
   font-weight: bold;
-  color: $darkerGray;
+  color: $text;
 }
 
 span[data-pullquote] {
