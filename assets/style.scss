@@ -161,6 +161,13 @@ details[open] {
     padding: 4px 0px 10px 0px;
 }
 
+table {border:2px solid $border;margin: 0 auto;}
+tr {border-top:1px dotted $border;}
+tr + tr {border-top:1px dotted $border;}
+td {border-left:1px dotted $border;padding: 5px 15px;min-width:100px}
+td + td {border-left:1px dotted $border;}
+th {padding: 0px 10px;border: 1px dotted;background:$back-light;font-weight:bold;}
+
 table.rouge-table tr, table.rouge-table td {
     border: 0px;
     background: $back-dark;
@@ -170,14 +177,6 @@ table.rouge-table tr, table.rouge-table td {
 td.rouge-gutter.gl {
     color: $white;
 }
-
-table {border:2px solid $border;margin: 0 auto;}
-tr {border-top:1px dotted $border;}
-tr + tr {border-top:1px dotted $border;}
-td {border-left:1px dotted $border;padding: 5px 15px;min-width:100px}
-td + td {border-left:1px dotted $border;}
-th {padding: 0px 10px;border: 1px dotted;background:$back-light;font-weight:bold;}
-
 
 /*
 table {
