@@ -8,7 +8,7 @@ layout: default
         {% for post in site.tags.pinned %}
         <div id="pinned">
           <article class="post">
-            <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+              <a href="{{ site.baseurl }}{{ post.url }}"><h1>{{ post.title }}</h1></a>
 
             <div class="entry">
               <p>{{ post.excerpt }}</p>
