@@ -301,7 +301,7 @@ a {
 }
 
 .entry a:hover {
-   background: $back-link;
+   background: $back-link-hover;
    color: $link;
 }
 
@@ -558,8 +558,8 @@ nav {
 }
 
 a.read-more:hover {
-    background: $blue;
-    color: $white;
+    background: $button-hover;
+    color: $button-text;
 }
 
 .wrapper-container {
