@@ -161,7 +161,7 @@ details[open] {
     padding: 4px 0px 10px 0px;
 }
 
-table {border:2px solid $border;margin: 0 auto;}
+table {border:2px solid $border;margin: 0 auto;width:100px;}
 tr {border-top:1px dotted $border;}
 tr + tr {border-top:1px dotted $border;}
 td {border-left:1px dotted $border;padding: 5px 15px;min-width:100px}
