@@ -188,6 +188,7 @@ table {
 	padding: 0;
 	border: 2px solid $border;
         width:100%;
+	margin: 0.8em;
 }
 
 table tr {
@@ -527,7 +528,7 @@ nav {
 
 .post {
   blockquote {
-    margin: 0.8em .8em 1.8em .8em;
+    margin: 0.8em;
     /*border-left: 2px solid $gray;*/
     padding: 0.1em 1em;
     color: $gray;
