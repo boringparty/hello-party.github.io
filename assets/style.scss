@@ -160,14 +160,14 @@ details {
 details[open] {
     padding: 4px 0px 10px 0px;
 }
-
-table {border:2px solid $border;margin: 0 auto;min-width:100%}
+/*
+table:not(.rouge-table) {border:2px solid $border;margin: 0 auto;min-width:100%}
 tr {border-top:1px dotted $border;}
 tr + tr {border-top:1px dotted $border;}
-td {border-left:1px dotted $border;padding: 5px 15px;min-width:100px}
+td {border-left:1px dotted $border;padding: 5px 15px}
 td + td {border-left:1px dotted $border;}
 th {padding: 0px 10px;border: 1px dotted;background:$back-light;font-weight:bold;}
-
+*/
 table.rouge-table tr, table.rouge-table td {
     border: 0px;
     background: $back-dark;
@@ -178,7 +178,7 @@ td.rouge-gutter.gl {
     color: $white;
 }
 
-/*
+
 table {
 	padding: 0;
 	margin-top: 30px;
@@ -219,7 +219,7 @@ table tr th :last-child,
 table tr td :last-child {
 	margin-bottom: 0;
 }
-*/
+
 /*.detailed .entry p:first-of-type:first-letter {
     float: left;
     margin: 0.13em 0.05em 0 -0.05em;
