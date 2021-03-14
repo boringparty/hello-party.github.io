@@ -305,6 +305,13 @@ a {
    color: $link;
 }
 
+.footnote {
+    background: none;
+    font-size: 0.8em;
+    vertical-align: super;
+    border-radius: 0px;
+    padding: 0px;
+}
 
 #search-container ul#results-container li a,
 #archives ul li a {
