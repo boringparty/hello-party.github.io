@@ -227,7 +227,7 @@ table tr td :last-child {
 	margin-bottom: 0;
 }
 
-thead {background: $back-light;}
+table thead tr {background: $back-light;}
 
 /*.detailed .entry p:first-of-type:first-letter {
     float: left;
