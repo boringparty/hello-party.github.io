@@ -172,16 +172,23 @@ table.rouge-table tr, table.rouge-table td {
     border: 0px;
     background: $back-dark;
     margin: 0px;
+    width: auto;
 }
 
 td.rouge-gutter.gl {
     color: $white;
+    width: auto;
+}
+
+table.rouge-table {
+    width: auto;
 }
 
 
 table {
 	padding: 0;
 	border: 2px solid $border;
+        width:100%;
 }
 
 table tr {
