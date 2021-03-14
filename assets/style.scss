@@ -170,7 +170,7 @@ td.rouge-gutter.gl {
     color: #6272a4;
 }
 
-table {border:2px solid $border;margin-top:30px;}
+table {border:2px solid $border;margin: 0 auto;}
 tr {border-top:1px dotted $border;}
 tr + tr {border-top:1px dotted $border;}
 td {border-left:1px dotted $border;padding: 5px 15px;min-width:100px}
@@ -512,7 +512,7 @@ nav {
 
 .post {
   blockquote {
-    margin: 0 .8em;
+    margin: 0.8em .8em 1.8em .8em;
     /*border-left: 2px solid $gray;*/
     padding: 0.1em 1em;
     color: $gray;
