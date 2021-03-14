@@ -164,10 +164,11 @@ details[open] {
 table.rouge-table tr, table.rouge-table td {
     border: 0px;
     background: $back-dark;
+    margin: 0px;
 }
 
 td.rouge-gutter.gl {
-    color: #6272a4;
+    color: $back-dark;
 }
 
 table {border:2px solid $border;margin: 0 auto;}
