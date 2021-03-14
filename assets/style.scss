@@ -271,7 +271,7 @@ span[data-pullquote]:before {
   padding: 0 -5% 0 0;
   font-size: 1.3em;
   font-style: italic;
-  color: green;
+  color: $text;
   text-align: center;
 }
 
@@ -281,26 +281,26 @@ a {
 	cursor: pointer;
   border-bottom: 1px dotted $blue;
   &:hover, &:active {
-    color: $blue;
+    color: $link;
   }
 }
 
 .entry a {
-  color: $black;
-  background: $cyan;
+  color: $link;
+  background: $back-link;
   text-decoration: none;
 	cursor: pointer;
   border-radius: 5px;
   padding: 2px 8px 0px 5px;
   border-bottom: 0px;
   &:hover, &:active {
-    color: $black;
+    color: $link;
   }
 }
 
 .entry a:hover {
-   background: $blue;
-   color: #FFF;
+   background: $back-link;
+   color: $link;
 }
 
 
@@ -312,9 +312,9 @@ a {
 
 #search-container ul#results-container li a:hover,
 #archives ul li a:hover {
-    color:#4183C4;
+    color:$text;
     background: none;
-    border-bottom: 1px dotted #4183C4;
+    border-bottom: 1px dotted $border;
     text-decoration:none;
     border-radius: 0px;
 }
@@ -373,17 +373,17 @@ p > img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $text;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
-  color: $black;
-  background: $lightGray;
+  color: $text;
+  background: $back-light;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: $text;
+  background: $back-light;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -632,7 +632,7 @@ body:after {
 }
 
 .page h2, .post h2 {
-  border-bottom: 1px solid #282a3650;
+  border-bottom: 1px solid $border;
   padding: 40px 0px 10px 0px;
 }
 
@@ -803,9 +803,9 @@ Modules - reusable parts of our design
 }
 
 .text-link {
-    color: #282a36;
+    color: $text;
     text-decoration: none;
-    border-bottom: 1px dotted #282a36;
+    border-bottom: 1px dotted $border;
 }
 
 .post-tags {
@@ -817,19 +817,20 @@ Modules - reusable parts of our design
   font-size: 0.75em;
   padding: 2px 13px 1px 13px;
   border: none;
-  background-color: #6272a4;
+  background-color: $back-categories;
   border-radius: 50px;
-  color: #fff;
+  color: #categories;
   font-family: $mono;
   text-transform: uppercase;
 }
 
 .pagination a, .pagination span {
   padding: 7px 18px;
-  border: 1px solid #eee;
+  border: 1px solid $border;
   margin-left: -2px;
   margin-right: -2px;
-  background-color: #ffffff;
+  background-color: $back-categories;
+  color: $categories;
   display: inline-block;
 }
 
