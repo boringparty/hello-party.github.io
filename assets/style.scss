@@ -17,7 +17,7 @@
        url('../fonts/courier-prime-v2-latin-regular.eot?#iefix') format('embedded-opentype'),
        url('../fonts/courier-prime-v2-latin-regular.woff2') format('woff2'),
        url('../fonts/courier-prime-v2-latin-regular.woff') format('woff'),
-       url('../fonts/courier-prime-v2-latin-regular.ttf') format('truetype'),
+       url('../fonts/courier-prime-v2-latin-regular.ttf') format('ruetype'),
        url('../fonts/courier-prime-v2-latin-regular.svg#CourierPrime') format('svg');
 }
 
@@ -134,9 +134,9 @@ div#smallCategories, #smallCategories a {
 }
 
 #smallCategories a {
-    background: $categories;
+    background: $back-categories;
     padding: 2px 5px;
-    color: $black;
+    color: $categories;
     border-radius: 10px;
 }
 
