@@ -148,7 +148,7 @@ div#subtitle {
 
 p {
     line-height: 24pt;
-    margin: 1em 0em 1em 0em;
+    margin: 1em 0em;
 }
 
 details {
@@ -533,7 +533,7 @@ nav {
   blockquote {
     margin: 0.8em;
     /*border-left: 2px solid $gray;*/
-    padding: 1em;
+    padding: 0em 1em;
     color: $gray;
     background-color: $white;
     border-radius: 8px;
