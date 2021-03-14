@@ -440,7 +440,7 @@ p > img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $header-text;
   cursor: pointer;
   font-family: $serifHeader;
   font-weight: 500;
@@ -482,7 +482,7 @@ nav {
 
   a:link, a:hover, a:visited, a:active {
     margin-left: 20px;
-    color: $darkGray;
+    color: $link;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -490,7 +490,7 @@ nav {
 
     @include mobile {
       margin: 0 10px;
-      color: $darkGray;
+      color: $link;
       border-bottom:0px;
     }
   }
@@ -502,7 +502,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px dotted $lightGray;
+  border-bottom: 1px dotted $border-light;
 }
 
 .posts > .post:last-child {
@@ -518,17 +518,17 @@ nav {
     color: $gray;
     background-color: $white;
     border-radius: 8px;
-    border: 1px dotted $black;
+    border: 1px dotted $border;
   }
 
   .you-may-like{
     margin: 1.8em .8em;
     /*border-left: 2px solid $gray;*/
     padding: 0.1em 1em;
-    color: $gray;
+    color: $button;
     font-size: 22px;
     font-style: italic;
-    background-color: #ddffb5;
+    background-color: $back-button;
   }
 
   .comments {
@@ -543,9 +543,9 @@ nav {
 
   a.read-more {
      padding: 5px 20px 2px 5px;
-     background: $cyan;
-     color: $black;
-     border-bottom: 1px dotted $black;}
+     background: $back-button;
+     color: $button;
+     border-bottom: 1px dotted $border;}
 }
 
 a.read-more:hover {
@@ -664,8 +664,8 @@ body:after {
 }
 
 .highlighter-rouge { 
-    background-color: #FFFFFF; 
-    color: #FF5555; 
+    background-color: $white; 
+    color: $red; 
     font-size: 16px;
 }
 
