@@ -486,6 +486,13 @@ h1.site-name img {
   }
 }
 
+.site-description:before, 
+.site-description:after {
+	content: "━━━";
+        padding: 0px 5px;
+}
+
+
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
